@@ -41,12 +41,12 @@ table {
 }
 
 :root {
-    --bg: #f4f9fc;
-    --line: #20110c;
-    --fill: #806a5b; 
-    --text: #0f1b61;
-    --subtext: #73bbc5;
-    --duo:#105d67
+    --bg: #EAEAEA; /* Mist Gray */
+    --line: #1C2541; /* Deep Indigo */
+    --fill: #3A506B; /* Oceanic Blue */
+    --text: #0F3057; /* Ink Blue */
+    --subtext: #5BC0BE; /* Bright Aqua */
+    --duo: #F45B69; /* Rose Red */
 }
 /*  #806a5b #20110c */
 
