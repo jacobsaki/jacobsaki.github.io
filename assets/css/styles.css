@@ -43,11 +43,12 @@ table {
 :root {
     --bg: #f4f9fc;
     --line: #6000cb;
-    --fill: #aadcec;
+    --fill: #aadcec; 
     --text: #0f1b61;
     --subtext: #73bbc5;
     --duo:#105d67
 }
+/*  #806a5b #20110c */
 
 a:not([class]) {
     font-weight: 700;
@@ -693,7 +694,7 @@ p:not([class]) {
 }
 
 .dizzy .eyes__right .eye__dot {
-    animation:dizzyEyeR 2.5s ease-in infinite alternate-reverse
+    animation:dizzyEyeR 2.5s ease-in infinite alternate-reverse;
 }
 
 .dizzy .eyes__x, .dizzy .eyes__y {
@@ -3649,20 +3650,25 @@ html.js.reduced-motion .reveal-content, html:not(.is-loading).js .is-onscreen .r
 
     .project__header {
         width: 40%;
-        margin-right:20px
+        margin-right:20px;
+        display: flex;
+        align-items: center;
     }
 
     .project__header .illustration {
-        max-width: 500px;
+        flex: 1; 
+        display: flex; 
+        justify-content: center;
+        align-items: center;
         position: relative;
-        margin:-20px auto 0
     }
 
-    .project__header .illustration__image {
-        width: 100%; /* Ensures the image scales across the width of the container */
-        height: 100%; /* Ensures the image scales across the height of the container */
-        object-fit: scale-down; /* Makes sure the image covers the entire container, removing white bars */
+    .project__header .illustration img {
+        width: 60%;      /* Scale the image to fill the container's width */
+        height: auto;     /* Maintain the aspect ratio of the image */
+        max-width: 100%;  /* Ensure the image does not exceed the container size */
     }
+
 }
 
 @media screen and (min-width: 650px) and(max-width: 900px) {
