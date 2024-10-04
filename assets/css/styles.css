@@ -8,7 +8,7 @@ a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, bo
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
-    display: block
+    display:block
 }
 
 body {
@@ -41,14 +41,12 @@ table {
 }
 
 :root {
-    --bg: #EAEAEA; 
-    --line: #1C2541;
-    --fill: #3A506B; 
-    --text: #0F3057; 
-    --subtext: #5BC0BE; 
-    --duo: #F45B69; 
+    --bg: #f4f9fc;
+    --line: #000000;
+    --fill: #aadcec; 
+    --text: #0f1b61;
+    --subtext: #73bbc5;
 }
-/*  #806a5b #20110c */
 
 a:not([class]) {
     font-weight: 700;
@@ -605,10 +603,6 @@ p:not([class]) {
     perspective: 1000;
     transition:transform .35s ease-out
 }
-
-.mouth {
-    z-index: 9999;
-  }
 
 .avatar--ready .neck__shadow {
     will-change: transform;
