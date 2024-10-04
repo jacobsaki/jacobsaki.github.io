@@ -42,8 +42,8 @@ table {
 
 :root {
     --bg: #f4f9fc;
-    --line: #6000cb;
-    --fill: #aadcec; 
+    --line: #20110c;
+    --fill: #806a5b; 
     --text: #0f1b61;
     --subtext: #73bbc5;
     --duo:#105d67
@@ -1960,7 +1960,6 @@ hr {
     stroke-linecap: round;
     stroke-linejoin: round;
     stroke-miterlimit: 10;
-    vector-effect:non-scaling-stroke
 }
 
 @media (min-width: 512px) {
