@@ -42,8 +42,8 @@ table {
 
 :root {
     --bg: #f4f9fc;
-    --line: #2B292E;
-    --fill: #786b5e;
+    --line: #6000cb;
+    --fill: #aadcec; 
     --text: #0f1b61;
     --subtext: #73bbc5;
 }
@@ -2113,9 +2113,9 @@ hr {
     opacity:.75
 }
 
-/* .btn:hover .btn__fill {
+.btn:hover .btn__fill {
     background-color:var(--fill, var(--bg))
-} */
+}
 
 .btn--small {
     padding:10px 0
