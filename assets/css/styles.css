@@ -42,10 +42,10 @@ table {
 
 :root {
     --bg: #f4f9fc;
-    --line: #6000cb;
-    --fill: #aadcec; 
-    --text: #0f1b61;
-    --subtext: #73bbc5;
+    --line: #000000;
+    --fill: #000000; 
+    --text: #000000;
+    --subtext: #000000;
 }
 
 a:not([class]) {
