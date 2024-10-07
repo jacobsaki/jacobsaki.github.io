@@ -15,17 +15,12 @@
     const r = new class {
         constructor()
         {
-            t || (this.lastX = 0, this.lastY = 0, this.lastWidth = window.innerWidth, this.lastHeight = window.innerHeight, this.lastMouseX = 0, this.lastMouseY = 0, this.lastWindowX = window.screenX, this.lastWindowY = window.screenY, this.lastAlpha = 0, this.lastBeta = 0, this.lastGamma = 0, this.currAlpha = 0, this.currBeta = 0, this.currGamma = 0, this.scrollHeight = document.body.scrollHeight, this.scrollChange = !1, this.sizeChange = !1, this.mouseChange = !1, this.positionChange = !1, this.orientationChange = !1, this.devicePixelRatioChange = !1, this.currX = 0, this.currY = 0, this.currWidth = window.innerWidth, this.currHeight = window.innerHeight, this.currMouseX = 0, this.currMouseY = 0, this.currWindowX = 0, this.currDevicePixelRatio = this.lastDevicePixelRatio = Math.max(window.devicePixelRatio || 1, 1), this.mouseXVelocity = [], this.mouseYVelocity = [], this.lastMouseXVelocity = 0, this.lastMouseYVelocity = 0, this.windowXVelocity = [], this.windowYVelocity = [], this.lastWindowXVelocity = 0, this.lastWindowYVelocity = 0, this.updating = !1, this.callbacks = [], this.update = this.update.bind(this), this.handleResize = this.handleResize.bind(this), this.handleMouse = this.handleMouse.bind(this), this.handleOrientation = this.handleOrientation.bind(this), this.recalibrateOrientation = this.recalibrateOrientation.bind(this), this.formatData = this.formatData.bind(this), this.watch = this.watch.bind(this), this.unwatch = this.unwatch.bind(this), this.handleResize = e(110, this.handleResize), this.handleMouse = e(75, this.handleMouse), window.addEventListener("resize", this.handleResize), window.addEventListener("mousemove", this.handleMouse), window.addEventListener("touchmove", this.handleTouch, { passive: false }), window.addEventListener("deviceorientation", this.handleOrientation), requestAnimationFrame(this.update))
+            t || (this.lastX = 0, this.lastY = 0, this.lastWidth = window.innerWidth, this.lastHeight = window.innerHeight, this.lastMouseX = 0, this.lastMouseY = 0, this.lastWindowX = window.screenX, this.lastWindowY = window.screenY, this.lastAlpha = 0, this.lastBeta = 0, this.lastGamma = 0, this.currAlpha = 0, this.currBeta = 0, this.currGamma = 0, this.scrollHeight = document.body.scrollHeight, this.scrollChange = !1, this.sizeChange = !1, this.mouseChange = !1, this.positionChange = !1, this.orientationChange = !1, this.devicePixelRatioChange = !1, this.currX = 0, this.currY = 0, this.currWidth = window.innerWidth, this.currHeight = window.innerHeight, this.currMouseX = 0, this.currMouseY = 0, this.currWindowX = 0, this.currDevicePixelRatio = this.lastDevicePixelRatio = Math.max(window.devicePixelRatio || 1, 1), this.mouseXVelocity = [], this.mouseYVelocity = [], this.lastMouseXVelocity = 0, this.lastMouseYVelocity = 0, this.windowXVelocity = [], this.windowYVelocity = [], this.lastWindowXVelocity = 0, this.lastWindowYVelocity = 0, this.updating = !1, this.callbacks = [], this.update = this.update.bind(this), this.handleResize = this.handleResize.bind(this), this.handleMouse = this.handleMouse.bind(this), this.handleOrientation = this.handleOrientation.bind(this), this.recalibrateOrientation = this.recalibrateOrientation.bind(this), this.formatData = this.formatData.bind(this), this.watch = this.watch.bind(this), this.unwatch = this.unwatch.bind(this), this.handleResize = e(110, this.handleResize), this.handleMouse = e(75, this.handleMouse), window.addEventListener("resize", this.handleResize), window.addEventListener("mousemove", this.handleMouse), window.addEventListener("deviceorientation", this.handleOrientation), requestAnimationFrame(this.update))
         }
         handleResize(t)
         {
             this.currWidth = window.innerWidth,
             this.currHeight = window.innerHeight
-        }
-        handleTouch(t) {
-            // Prevent the default scrolling behavior on touch
-            this.currMouseX = t.touches[0].clientX;
-            this.currMouseY = t.touches[0].clientY;
         }
         handleMouse(t)
         {
@@ -2158,4 +2153,15 @@
             }))
         }), 1e3)
     }))
+
+//     document.addEventListener("DOMContentLoaded", function() {
+//     const rootStyles = getComputedStyle(document.documentElement);
+//     const fill = rootStyles.getPropertyValue('--fill').trim().substring(1);
+//     const subtext = rootStyles.getPropertyValue('--subtext').trim().substring(1);
+
+//     const stripesElement = document.querySelector('.stripes');
+//     const bgImage = `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 22.93 22.93'%3E%3Cpolygon fill='%23${encodeURIComponent(subtext)}' points='0 8.18 14.75 22.93 22.74 22.93 0 0.19 0 8.18'/%3E%3Cpolygon fill='%23${encodeURIComponent(fill)}' points='22.93 8.37 22.93 0.38 22.56 0 14.56 0 22.93 8.37'/%3E%3C/svg%3E")`;
+
+//     stripesElement.style.backgroundImage = bgImage;
+// });
 }();
