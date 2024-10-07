@@ -24,7 +24,6 @@
         }
         handleTouch(t) {
             // Prevent the default scrolling behavior on touch
-            t.preventDefault();
             this.currMouseX = t.touches[0].clientX;
             this.currMouseY = t.touches[0].clientY;
         }
