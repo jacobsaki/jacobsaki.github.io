@@ -46,6 +46,7 @@ table {
     --fill: #4A1F21; 
     --text: #000000;
     --subtext: #000000;
+    --tertiary: #AECAA4;
 }
 
 a:not([class]) {
@@ -2114,7 +2115,7 @@ hr {
 }
 
 .btn:hover .btn__fill {
-    background-color:var(--fill, var(--bg))
+    background-color:var(--tertiary, var(--bg))
 }
 
 .btn--small {
